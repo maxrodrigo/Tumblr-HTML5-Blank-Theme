@@ -9,7 +9,8 @@ Tumblr HTML5 Blank Theme is a barebones Tumblr theme created to be a starting po
 * Valid, cross browser, **minimalistic** code.
 * Tumblr features as:
     * Full Text translation
-    * Day and Tags Pages
+    * Day, Tags, Search Pages
+    * Day, Tags, Search result translated validations
     * Custom Fonts and Colors
     * All post types
     * Google Analytics Code
