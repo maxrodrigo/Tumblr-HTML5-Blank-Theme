@@ -28,6 +28,7 @@
     <meta name="if:Show Archive" content="1"/>
     <meta name="if:Show RSS" content="0"/>
     <meta name="if:Show Search" content="0"/>
+
     <meta name="if:Use Time Ago" content="0"/>
     <meta name="if:Use HighRes Photos" content="1"/>
     <meta name="if:Use Number Pagination" content="0"/>
@@ -214,7 +215,7 @@
                 {block:Artist}
                   {Artist}
                 {/block:Artist}
-                -
+               
                 {block:TrackName}
                   {TrackName}
                 {/block:TrackName}
@@ -252,15 +253,17 @@
         {block:Answer}
           <article class="post answer">
             <dialog>
-              <dt> {Asker} </dt>
-              <dd> {Question} </dd>
+              <dt><img src="{AskerPortraitURL-16}"> {lang:Asker asked 2}: </dt>
+              <dd>{Question}</dd>
 
-              <dt> {Title} </dt>
-              <dd> {Answer} </dd>
+              <dd>{Answer}</dd>
             </dialog>
         {/block:Answer}
 
             <footer>
+              {block:NoteCount}
+                <div class="notes"><a href="{Permalink}">{lang:Notes}: {NoteCount}</a></div>
+              {/block:NoteCount}
               {block:HasTags} 
                 <ul>
                   {block:Tags}

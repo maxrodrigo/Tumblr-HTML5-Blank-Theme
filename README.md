@@ -23,7 +23,7 @@ Tumblr HTML5 Blank Theme is a barebones Tumblr theme created to be a starting po
 4. Replace the code
 5. Save, Refresh, Enjoy.
 
-## Configuration Variables
+## Configuration
 
 ![Tumblr Appearance Options](https://dl.dropbox.com/u/4922968/assets/ThemeAppearance.png)
 
