@@ -14,6 +14,7 @@
 
     <!-- Tumblr Theme configuration -->
     <meta name="color:Background" content="#FFFFFF"/>
+    <meta name="color:Text" content="#000000"/>
     <meta name="color:Link" content="#0000FF"/>
     <meta name="color:Link Hover" content="#FF0000"/>
     <meta name="color:Link Visited" content="#800080"/>
@@ -47,14 +48,15 @@
       body{
         background:{color:Background};
         font-family:{font:Site Font};
+        color:{color:Text};
       }
-      a{ 
+      a{
         color:{color:Link};
       }
-      a:hover{ 
-        color:{color:Link Hover}; 
+      a:hover{
+        color:{color:Link Hover};
       }
-      a:visited{ 
+      a:visited{
         color:{color:Link Visited};
       }
       {CustomCSS}
@@ -68,7 +70,7 @@
       <!--PAGE HEADER ******************************************************************* -->
       <header>
         {block:IfHeaderImage}
-          <div id="logo"><a href="/"><img src="{image:Header}"/></a></div>
+          <div id="logo"><a href="/"><img src="{image:Header}" alt="{Title}"/></a></div>
         {/block:IfHeaderImage}
         {block:IfNotHeaderImage}
           <h1><a href="/">{Title}</a></h1>
@@ -101,7 +103,7 @@
             <input type="text" name="q" placeholder="{lang:Search}">
           </form>
           {/block:IfShowSearch}
-        </nav>      
+        </nav>
         {block:DayPage}
           <h2>{Month} {DayOfMonth}, {Year}</h2>
         {/block:DayPage}
@@ -183,7 +185,7 @@
               <h2>
                 <a href="{URL}" {Target}>{Name}</a>
               </h2>
-            </header> 
+            </header>
             {block:Description}
             <p> {Description} </p>
             {/block:Description}
@@ -215,7 +217,7 @@
                 {block:Artist}
                   {Artist}
                 {/block:Artist}
-               
+
                 {block:TrackName}
                   {TrackName}
                 {/block:TrackName}
@@ -228,7 +230,7 @@
 
               {block:AudioPlayer}
                 {AudioPlayer}
-              {/block:AudioPlayer} 
+              {/block:AudioPlayer}
 
               {block:Caption}
                 <figcaption>
@@ -264,7 +266,7 @@
               {block:NoteCount}
                 <div class="notes"><a href="{Permalink}">{lang:Notes}: {NoteCount}</a></div>
               {/block:NoteCount}
-              {block:HasTags} 
+              {block:HasTags}
                 <ul>
                   {block:Tags}
                   <li><a href="{TagURL}">#{Tag}</a></li>
@@ -284,14 +286,14 @@
                 </a>
               </time>
               {/block:Date}
-              
+
               {block:NoteCount}
                 <a href="{Permalink}">{NoteCount}</a>
               {/block:NoteCount}
 
               {block:PermalinkPage}
                 {block:PostNotes}<div>{PostNotes}</div>{/block:PostNotes}
-              {/block:PermalinkPage}   
+              {/block:PermalinkPage}
             </footer>
           </article>
         {/block:Posts}
@@ -300,8 +302,8 @@
       <footer>
         {block:PermalinkPagination}
           <nav>
-            {block:PreviousPost}<a href="{PreviousPost}">« {lang:Previous}</a>{/block:PreviousPost} 
-            {block:NextPost}<a href="{NextPost}">{lang:Next} »</a>{/block:NextPost} 
+            {block:PreviousPost}<a href="{PreviousPost}">« {lang:Previous}</a>{/block:PreviousPost}
+            {block:NextPost}<a href="{NextPost}">{lang:Next} »</a>{/block:NextPost}
           </nav>
         {/block:PermalinkPagination}
 
@@ -328,13 +330,13 @@
         <p>{text:Footer Text}</p>
       </footer>
     </div>
-    {block:IfGoogleAnalyticsID}    
+    {block:IfGoogleAnalyticsID}
     <script>
       var _gaq=[['_setAccount','{text:Google Analytics ID}'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
-    {/block:IfGoogleAnalyticsID}    
+    {/block:IfGoogleAnalyticsID}
   </body>
 </html>
