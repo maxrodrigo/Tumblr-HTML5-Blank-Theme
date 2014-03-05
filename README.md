@@ -19,13 +19,13 @@ Tumblr HTML5 Blank Theme is a barebones Tumblr theme created to be a starting po
 
 1. Go to ``http://www.tumblr.com/customize/<your-blog-name>``
 2. Click ``Edit HTML``
-3. Copy the index.html [Source Code](https://raw.github.com/wxrod/Tumblr-HTML5-Blank-Theme/master/index.html) 
+3. Copy the index.html [Source Code](https://raw.github.com/wxrod/Tumblr-HTML5-Blank-Theme/master/index.html)
 4. Replace the code
 5. Save, Refresh, Enjoy.
 
 ## Configuration
 
-![Tumblr Appearance Options](https://dl.dropbox.com/u/4922968/assets/ThemeAppearance.png)
+![Tumblr Appearance Options](http://wxr.me/assets/Tumblr-HTML5-Blank-Theme-Options.png)
 
 ## License & Notes
 
