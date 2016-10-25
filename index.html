@@ -128,9 +128,9 @@
               <h2 class="entry-title">{Title}</h2>
             </header>
             {/block:Title}
-            <p>
+            <div>
               {Body}
-            </p>
+            </div>
         {/block:Text}
 
         {block:Photo}
@@ -192,23 +192,21 @@
         {/block:Link}
 
         {block:Chat}
-          <article class="post chat">
-            {block:Title}
-            <header>
-              <h2>{Title}</h2>
-            </header>
-            {/block:Title}
-            <dialog>
-              {block:Lines}
-                {block:Label}
-                  <dt class="{Alt} {UserNumber}">
-                    {Label}
-                  </dt>
-                {/block:Label}
-                <dd> {Line} </dd>
-              {/block:Lines}
-            </dialog>
-        {/block:Chat}
+        <article class="post chat">
+          {block:Title}
+          <header>
+            <h2>{Title}</h2>
+          </header>
+          {/block:Title}
+          <table>
+            {block:Lines}
+            <tr>
+              <th class="{Alt} {UserNumber}">{block:Label}{Label}{/block:Label}</th>
+              <td>{Line}</td>
+            </tr>
+            {/block:Lines}
+          </table>
+          {/block:Chat}
 
         {block:Audio}
           <article class="post audio">
